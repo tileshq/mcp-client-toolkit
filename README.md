@@ -2,14 +2,6 @@
 
 TypeScript client library and utilities for remote Model Context Protocol (MCP) servers.
 
-## Installation
-
-```bash
-npm install mcp-client-toolkit
-```
-
-## Usage
-
 ### Basic Client
 
 ```typescript

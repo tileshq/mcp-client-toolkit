@@ -6,7 +6,10 @@
   "types": "dist/lib/index.d.ts",
   "type": "module",
   "exports": {
-    ".": "./dist/lib/index.js"
+    ".": {
+      "types": "./dist/lib/index.d.ts",
+      "import": "./dist/lib/index.js"
+    }
   },
   "scripts": {
     "build": "tsc",
