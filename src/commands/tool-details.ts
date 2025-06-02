@@ -4,7 +4,7 @@ import {
   ListToolsResultSchema,
 } from '@modelcontextprotocol/sdk/types.js';
 
-import { formatJsonSchema, generateExampleArgs } from '../../utils/schema.js';
+import { formatJsonSchema, generateExampleArgs } from '../utils/schema.js';
 
 /**
  * Show detailed information about a specific tool including its schema
