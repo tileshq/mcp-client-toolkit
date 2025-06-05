@@ -2,13 +2,14 @@
   "name": "mcp-client-toolkit",
   "version": "1.0.0",
   "description": "TypeScript client library and utilities for Model Context Protocol (MCP) servers",
-  "main": "dist/lib/index.js",
-  "types": "dist/lib/index.d.ts",
+  "main": "./dist/lib/index.js",
+  "types": "./dist/lib/index.d.ts",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/lib/index.d.ts",
-      "import": "./dist/lib/index.js"
+      "import": "./dist/lib/index.js",
+      "default": "./dist/lib/index.js"
     }
   },
   "scripts": {
@@ -16,7 +17,8 @@
     "dev": "tsc --watch",
     "prepare": "npm run build",
     "prepublishOnly": "npm run build",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "clean": "rm -rf dist"
   },
   "keywords": [
     "mcp",
@@ -30,11 +32,11 @@
   "author": "Aswin C",
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "typescript": "^5.8.3"
+    "@modelcontextprotocol/sdk": "^1.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0"
+    "@types/node": "^20.0.0",
+    "typescript": "^5.8.3"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -44,5 +46,6 @@
     "src/**/*",
     "tsconfig.json",
     "README.md"
-  ]
+  ],
+  "sideEffects": false
 }
