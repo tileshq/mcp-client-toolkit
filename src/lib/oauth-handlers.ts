@@ -1,7 +1,7 @@
-import { createServer } from 'node:http';
-import { exec } from 'node:child_process';
-import { URL } from 'node:url';
-import { OAuthHandler } from './types.js';
+import { createServer } from 'http';
+import { exec } from 'child_process';
+import { URL } from 'url';
+import type { OAuthHandler } from './types.js';
 
 /**
  * Browser-based OAuth handler that opens the default browser
