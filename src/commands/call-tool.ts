@@ -1,6 +1,6 @@
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
+import type { CallToolRequest } from '@modelcontextprotocol/sdk/types.js';
 import {
-  CallToolRequest,
   CallToolResultSchema,
 } from '@modelcontextprotocol/sdk/types.js';
 

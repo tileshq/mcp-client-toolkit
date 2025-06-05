@@ -1,9 +1,11 @@
-import { EventEmitter } from 'node:events';
+import { EventEmitter } from 'events';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { Tool, CallToolResultSchema, ListToolsResultSchema, LoggingMessageNotificationSchema } from '@modelcontextprotocol/sdk/types.js';
+import type { Tool } from '@modelcontextprotocol/sdk/types.js';
+import { CallToolResultSchema, ListToolsResultSchema, LoggingMessageNotificationSchema } from '@modelcontextprotocol/sdk/types.js';
 
-import { ConnectionManager, ConnectionManagerConfig } from './connection-manager.js';
-import { TransportType, MCPClientConfig, ToolDetails } from './types.js';
+import { ConnectionManager } from './connection-manager.js';
+import type { ConnectionManagerConfig } from './connection-manager.js';
+import type { TransportType, MCPClientConfig, ToolDetails } from './types.js';
 import { BrowserOAuthHandler } from './oauth-handlers.js';
 
 /**

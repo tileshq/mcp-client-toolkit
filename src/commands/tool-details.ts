@@ -1,6 +1,6 @@
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
+import type { ListToolsRequest } from '@modelcontextprotocol/sdk/types.js';
 import {
-  ListToolsRequest,
   ListToolsResultSchema,
 } from '@modelcontextprotocol/sdk/types.js';
 

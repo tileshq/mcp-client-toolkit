@@ -1,12 +1,12 @@
-import { EventEmitter } from 'node:events';
+import { EventEmitter } from 'events';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
 import { SSEClientTransport } from '@modelcontextprotocol/sdk/client/sse.js';
 import { UnauthorizedError } from '@modelcontextprotocol/sdk/client/auth.js';
-import { OAuthClientMetadata } from '@modelcontextprotocol/sdk/shared/auth.js';
+import type { OAuthClientMetadata } from '@modelcontextprotocol/sdk/shared/auth.js';
 
 import { InMemoryOAuthClientProvider } from '../auth/oauth-provider.js';
-import { TransportType, ConnectionResult, OAuthHandler } from './types.js';
+import type { TransportType, ConnectionResult, OAuthHandler } from './types.js';
 
 export interface ConnectionManagerConfig {
   callbackPort?: number;

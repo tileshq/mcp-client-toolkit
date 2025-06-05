@@ -1,5 +1,5 @@
-import { OAuthClientMetadata, OAuthTokens } from '@modelcontextprotocol/sdk/shared/auth.js';
-import { Tool } from '@modelcontextprotocol/sdk/types.js';
+import type { OAuthClientMetadata, OAuthTokens } from '@modelcontextprotocol/sdk/shared/auth.js';
+import type { Tool } from '@modelcontextprotocol/sdk/types.js';
 
 export type TransportType = 'streamable-http' | 'sse';
 

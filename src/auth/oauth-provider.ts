@@ -1,10 +1,10 @@
-import { 
-  OAuthClientInformation, 
-  OAuthClientInformationFull, 
-  OAuthClientMetadata, 
-  OAuthTokens 
+import type {
+  OAuthClientInformation,
+  OAuthClientInformationFull,
+  OAuthClientMetadata,
+  OAuthTokens
 } from '@modelcontextprotocol/sdk/shared/auth.js';
-import { OAuthClientProvider } from '@modelcontextprotocol/sdk/client/auth.js';
+import type { OAuthClientProvider } from '@modelcontextprotocol/sdk/client/auth.js';
 
 /**
  * In-memory OAuth client provider for demonstration purposes
